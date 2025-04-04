@@ -1,0 +1,21 @@
+# Test de encriptación (POST a /aes-encrypt)
+POST http://127.0.0.1:8000/aes-encrypt
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": "Jhony Luna"
+}
+
+###
+
+# Test de desencriptación (POST a /aes-decrypt)
+POST http://127.0.0.1:8000/aes-decrypt
+Content-Type: application/json
+Accept: application/json
+
+{
+  "encryptText": "SCkuEy1DVh8Hw3lGqNdHjg=="
+}
+
+###
